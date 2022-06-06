@@ -6,9 +6,10 @@ For this project, we are being asked by a fictional company to use supervised ma
 
 ## Results
 
-###### Naive Random Oversampling
+##### Naive Random Oversampling
 
 Balanced Accuracy: 
+
 ![image](https://user-images.githubusercontent.com/98666269/172079358-1216154d-06cf-4627-bbbd-435488ef0dc4.png)
 
 Classification Report:
@@ -17,7 +18,7 @@ Classification Report:
 
 Our balanced accuracy for the model with this seed is sitting at around 65%. Our low risk scores are fine, with 100% precision and 68% recall. Our precision for high risk clients is a measly 1%, and a slightly lower 62% recall. The accuracy is 68%, so the balanced accuracy score is close.
 
-###### SMOTE Oversampling
+##### SMOTE Oversampling
 
 Balanced Accuracy: 
 
@@ -29,7 +30,7 @@ Classification Report:
 
 This is a worse model than previous, as our balanced balanced accuracy score is lower at around 62%. Although the precision is the same for both the high and low risk clients, the recall is lower for both at 59% and 66% respectively.
 
-###### Undersampling
+##### Undersampling
 
 Balanced Accuracy: 
 
