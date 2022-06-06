@@ -79,3 +79,7 @@ Classification Report:
 This is far and away our best model. The balanced accuracy is sitting at a nearly a whopping 93%. The precision for high risk is at 7%, while again our low risk stays at 100%. Our recall scores also incredible, with 91% for high risk and 94% for low risk. 
 
 ## Summary
+
+For our six models, we had similar-ish results for all of our oversampling/undersampling/combined sampling models. The precision scores were consistent, while the accuracy and recall scores were relatively close. Conversely, the imbalanced models were much better. They were much more accurate, and provided a higher level of precision compared to models where we oversampled or undersampled. 
+
+For our six different models, we have a clear winner as to which one to use. The Easy Ensemble AdaBoos Classifier has the best scores across the bunch. It has the highest balanced accuracy, the high accuracy in general, the best precision in the high risk classification (which is what we're looking for), and the highest recall for both the high and low risk. I would recommend this model for our company.
