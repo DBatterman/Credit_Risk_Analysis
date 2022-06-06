@@ -42,6 +42,40 @@ Classification Report:
 
 For this model, our balanced average is roughly 59%. Our precision is the same for both high and low risk clients, but the recall scores are swapped compared to our previous models. This time around, the high risk recall is higher than our low risk recall. The high risk is catching 61% of positive cases, while our low risk is only at 57%.
 
+##### Combination Sampling
 
+Balanced Accuracy:
+
+![image](https://user-images.githubusercontent.com/98666269/172084573-7e6765fe-57c6-45b5-906d-fcbaa23c8bd8.png)
+
+Classification Report:
+
+![image](https://user-images.githubusercontent.com/98666269/172084614-b698a181-11fa-41f8-a239-6a3eecce3c60.png)
+
+We once again have a model at around 65% accuracy, but unlike our Naive Random Oversampling we're rounding up to get that number instead of rounding down. This is also above the average score in our classification report. Again, our precision remains the same for our high and low risk clients. Our high risk recall is the best score we have so far at 71%, while our low risk is near our worst with 58%.
+
+##### Balanced Random Forest Classifier
+
+Balanced Accuracy:
+
+![image](https://user-images.githubusercontent.com/98666269/172085151-47436d1c-39f6-4e22-aab9-1fbfedff2476.png)
+
+Classification Report:
+
+![image](https://user-images.githubusercontent.com/98666269/172085180-166bcf95-11f0-4f20-9eb8-d6aa35882541.png)
+
+With our first imbalanced sorting, we see a much better model. The balanced accuracy is up to around 79%, with the precision of high risk clients up to 4% while still maintaining the 100% low risk precision. The recall for high risk is a respectable 67%, while low risk recall is the best we've seen at 91%.
+
+##### Easy Ensemble AdaBoost Classifier
+
+Balanced Accuracy: 
+
+![image](https://user-images.githubusercontent.com/98666269/172085513-81324d72-cd98-4bfc-94c7-194685d35553.png)
+
+Classification Report:
+
+![image](https://user-images.githubusercontent.com/98666269/172085546-9a688b48-9d00-45d7-8e41-cc3fb93f4b28.png)
+
+This is far and away our best model. The balanced accuracy is sitting at a nearly a whopping 93%. The precision for high risk is at 7%, while again our low risk stays at 100%. Our recall scores also incredible, with 91% for high risk and 94% for low risk. 
 
 ## Summary
